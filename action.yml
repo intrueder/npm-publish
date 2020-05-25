@@ -1,0 +1,22 @@
+name: 'npm-publish'
+description: 'Publish new release to npm'
+inputs:
+  commit_message_pattern:
+    description: 'The pattern that will trigger the action'
+    required: true
+    default: '^Release (\\S+)'
+  git_user_name:
+    description: 'The user to use in `git tag`'
+    required: false
+  git_user_email:
+    description: 'The email to use in `git tag`'
+    required: false
+  npm_token:
+    description: 'NPM auth token with permissions to publish'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'box'
+  color: 'gray-dark'

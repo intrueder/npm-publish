@@ -1,0 +1,29 @@
+{
+  "name": "npm-publish",
+  "version": "1.0.0",
+  "description": "GitHub action to publish new release to NPM",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build",
+    "format": "prettier --write \"**/*.js\"",
+    "format-check": "prettier --check \"**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "npm",
+    "publish"
+  ],
+  "author": "intrueder",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/exec": "^1.0.4",
+    "@actions/github": "^2.2.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
+    "prettier": "^2.0.5"
+  }
+}
