@@ -1,6 +1,6 @@
 {
   "name": "npm-publish",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "GitHub action to publish new release to NPM",
   "main": "index.js",
   "scripts": {
@@ -18,12 +18,12 @@
   "author": "intrueder",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "@actions/exec": "^1.0.4",
-    "@actions/github": "^4.0.0"
+    "@actions/core": "^1.10.0",
+    "@actions/exec": "^1.1.1",
+    "@actions/github": "^5.1.1"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.22.3",
-    "prettier": "^2.1.2"
+    "prettier": "^2.8.3"
   }
 }
